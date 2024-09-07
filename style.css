@@ -1,0 +1,70 @@
+/* comentario */
+
+/* selector { propiedades: valor;} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* selector de etiqueta */
+
+h1 {
+    color:aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #452389;
+    text-align: center;
+}
+
+h2 {
+    color: #452389;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border-bottom: 2px solid #452389;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+/* selectores id */
+
+#tituloDiferente {
+    font-size: 3rem;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+/* selector class */
+
+.tituloChico {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    background-color: #422184;
+    padding: 10px;
+    border-radius: 30px;
+    width: 120px;
+    text-align: center;
+}
+
+/* ******** */
+
+p {
+    margin-bottom: 15px;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+article {
+    margin-left: 20px;
+    display: inline;
+}
+
+article div {
+    margin-left: 20px;
+}
+
+div {
+    display: inline;
+}
