@@ -1,5 +1,31 @@
 /* comentario */
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* SASS y variables */
+
+:root{
+    /* paleta de colores de la web */ /* colore imprenta CMYK*/ /* colores pantalla RGB */
+    --violeta: #452389; /* R _ _ , G _ _ , B _ _   0-9 A-F */
+    --blancoMarfil: #e2e6ea;
+    --colorSecundario: darkgrey;
+    --colorRgb: rgb(125, 50, 200); /* valores de 0 a 255 */
+    --colorRgba: rgba(125, 50, 200, 0.313);
+
+    /* tamaños de fuentes */
+    --tamanioParrafo: 2rem; /* 1em M=16px, rem M, % contenedor, 1ex x=8px=0.5em, ch ancho 0, 50vw, vh */
+    --tamanioTitulos: 3rem;
+    --tamanioSubtitulos: 2.8rem;
+
+    /* fondos */
+    --fondoTexto:#e8c7ff;
+    --fondoOscuro:#0f011e;
+    
+    /* tipografía */
+    --letraFamily: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 /* selector { propiedades: valor;} */
 
 * {
@@ -8,21 +34,26 @@
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background: rgb(160,25,214);
+    background: linear-gradient(5deg, rgba(160,25,214,1) 0%, rgba(0,189,232,1) 89%);
+}
+
 /* selector de etiqueta */
 
 h1 {
-    color:aliceblue;
+    color:var(--blancoMarfil);
     font-size: 20px;
     padding: 10px;
-    background-color: #452389;
+    background-color: var(--violeta);
     text-align: center;
 }
 
 h2 {
-    color: #452389;
+    color: var(--violeta);
     font-size: 1.5rem;
     margin-top: 20px;
-    border-bottom: 2px solid #452389;
+    border-bottom: 2px solid var(--violeta);
     padding-bottom: 10px;
     width: 50%;
 }
@@ -30,8 +61,8 @@ h2 {
 /* selectores id */
 
 #tituloDiferente {
-    font-size: 3rem;
-    background-color: darkgrey;
+    font-size: var(--tamanioTitulos);
+    background-color: var(--colorSecundario);
     text-align: center;
 }
 
@@ -49,7 +80,7 @@ h2 {
 }
 
 /* ******** */
-
+/*
 p {
     margin-bottom: 15px;
     width: 50%;
@@ -67,4 +98,52 @@ article div {
 
 div {
     display: inline;
-}
+}*/
+
+/* selector de herencia */
+
+/*#img h3 {
+    font-size: 3rem;
+}*/
+
+         
+.pepe {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  #img{
+    width: 500px;
+    height: 500px;
+    border: 2px solid var(--violeta);
+    background-color: var(--violeta);
+    background-image: url(img/marcoai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #h3ejemplo{
+    font-size: 3rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+  
