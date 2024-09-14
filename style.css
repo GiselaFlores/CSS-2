@@ -26,7 +26,7 @@
 
 }
 
-/* selector { propiedades: valor;} */
+/* selector { propiedades: valor;} 
 
 * {
     margin: 0;
@@ -39,7 +39,7 @@ body {
     background: linear-gradient(5deg, rgba(160,25,214,1) 0%, rgba(0,189,232,1) 89%);
 }
 
-/* selector de etiqueta */
+/* selector de etiqueta 
 
 h1 {
     color:var(--blancoMarfil);
@@ -58,7 +58,7 @@ h2 {
     width: 50%;
 }
 
-/* selectores id */
+/* selectores id 
 
 #tituloDiferente {
     font-size: var(--tamanioTitulos);
@@ -66,7 +66,7 @@ h2 {
     text-align: center;
 }
 
-/* selector class */
+/* selector class 
 
 .tituloChico {
     margin-top: 10px;
@@ -104,7 +104,7 @@ div {
 
 /*#img h3 {
     font-size: 3rem;
-}*/
+}
 
          
 .pepe {
@@ -143,7 +143,117 @@ div {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
+  }*/
+
+  /* box model - modelo de caja */
+
+  .bb{
+    margin: 10px;  /* margen 10px en todos los lados */
+    margin-top: 15px; /* el lado puntual */
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    margin: 10px 15px; /* top/bottom   right/left */
+    margin: 10px 15px 20px; /* top   right/left  bottom */
+    margin: 10px 15px 20px 25px; /* top   right bottom  left */
+
+    padding: 10px;  /* margen 10px en todos los lados */
+    padding-top: 15px; /* el lado puntual */
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    padding: 10px 15px; /* top/bottom   right/left */
+    padding: 10px 15px 20px; /* top   right/left  bottom */
+    padding: 10px 15px 0 25px; /* top   right bottom  left */
+
+    border: 1px;  /* margen 10px en todos los lados */
+    border-top: 2px; /* el lado puntual */
+    border-right: 2px;
+    border-bottom: 2px;
+    border-left: 2px;
+
+    border: 1px 2px; /* top/bottom   right/left */
+    border: 3px 1px 2px; /* top   right/left  bottom */
+    border: 1px 1px 2px 2px; /* top   right bottom  left */
+
+    border-color: #452389;
+    border-width: 2px;
+    border-style: solid;
+
+    border-color: red green blue var(--violeta);
+    border-width: 1px 1px 2px 2px;
+    border-style: solid dotted solid;
+
+    box-sizing: border-box; /* content-box border-box initial inherit */
+
+  }
+
+  /* display */
+
+  /* block inline inline-block none flex grid table */
+
+  .color{
+    color: chocolate;
+    font-weight: 300;
+    margin-top: 60px;
+  }
+
+  .b1 {
+     display: none;
+    /*visibility: hidden;  visible|hidden|collapse|initial|inherit */
+  }
+
+  /* position */
+
+  #estructura{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #e2e6ea;
+    text-align: center;
+    position: fixed;
+    top:0px;
+    left: 0px;
   }
 
 
-  
+  .box{
+    width: 80%;
+    height: 300px;
+    border: 2px solid var(--fondoOscuro);
+    opacity: 90%;
+    position: absolute;
+    
+  }
+
+  .texto{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--fondoOscuro);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .z1{
+    background-color: #e8c7ff;      
+    top: 0;
+    left: 700px; 
+    z-index: 20;
+  }
+
+  .z2{
+    background-color: #6c3097;   
+    top: 0;
+    left: 350px;
+    z-index: 0;
+  }
+
+  .z3{
+    background-color: #1e0431;
+    color: #e2e6ea;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
