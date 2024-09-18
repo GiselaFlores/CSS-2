@@ -1,0 +1,24 @@
+.box{
+    width: 300px;
+    height: auto;
+    border: 2px solid var(--fondoOscuro);
+    background-color: #452389;
+}
+
+.texto {
+    font-size: 3rem;
+    color: var(--fondoOscuro);
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* start end center between around evenly */
+    align-items: strech;
+}
