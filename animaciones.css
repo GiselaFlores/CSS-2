@@ -1,0 +1,112 @@
+#animaciones{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    animation-name: cambiarColor;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiarColor {
+        0% {background: red; width: 200px;}
+        /* Primer fotograma */
+        50% {background: yellow; width: 400px;}
+        /* Segundo fotograma */
+        100% {background: green; width: 600px;}
+        /* Último fotograma */       
+}
+
+
+#animaciones:hover{
+   /* transform: translate(20px, 30px);
+    transform: scale(2, 6);
+    transform: rotate(30deg);*/
+    transform: rotate(5deg) scale(2,2) translate(20px, 40px);
+    transition: all 0.2s ease-in;
+}
+
+
+#animaciones2{
+
+    font-size: 1rem;
+    animation-name: cambiarColor;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiarColor {
+        0% {color: red; font-size: 2rem;}
+        /* Primer fotograma */
+        50% {color: yellow; font-size: 3rem;}
+        /* Segundo fotograma */
+        100% {color: green; font-size: 4rem;}
+        /* Último fotograma */       
+}
+
+div{
+    margin: 50px;
+}
+
+.chain-animation {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: moveRight 5s ease-in-out, fadeOut 5s ease 3s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes moveRight {
+    0% { transform: translateX(0); }
+    50%{transform: rotate(30deg);}
+    100% { transform: translateX(500px); }
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+
+  .rotate-fade {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation: rotateFade 5s infinite;
+  }
+
+  @keyframes rotateFade {
+    0% { transform: rotate(0deg); opacity: 1; }
+    50% { transform: rotate(180deg); opacity: 0.5; }
+    100% { transform: rotate(360deg); opacity: 1; }
+  }
+
+  .move-scale {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: moveScale 4s ease-in-out infinite;
+  }
+
+  @keyframes moveScale {
+    0% { transform: translateX(0) scale(1); }
+    50% { transform: translateX(200px) scale(1.5); }
+    100% { transform: translateX(0) scale(1); }
+  }
+
+
+  .color-change {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: changeColor 5s linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes changeColor {
+    from { background-color: red; }
+    to { background-color: blue; }
+  }

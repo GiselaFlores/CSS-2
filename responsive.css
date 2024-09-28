@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+div{
+    background-color: red;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+p{
+    font-size: 2vw;
+    margin: 10px;
+}
+
+#img{
+    display: none;
+}
+
+
+/********************* medias responsive *******/
+
+@media screen and (min-width:320px) and (max-width:499px){
+
+    div{
+        background-color: rgb(237, 77, 9);    
+    }
+
+    p{
+        font-size: 2vw;
+        padding: 5px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    
+    
+}
+
+@media screen and (min-width:500px) and (max-width:900px) {
+
+    div{
+        background-color: darkgreen;    
+    }
+
+    p{
+        font-size: 2.5vw;
+        padding: 20px;
+    }
+
+    p:last-child{
+        display: none;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    
+}
+
+@media screen and (min-width:1000px){
+
+    div{
+        background-color: rgb(9, 17, 237);    
+    }
+
+    p{
+        font-size: 2vw;
+        padding: 30px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    #img{
+        display: block;
+        margin: auto;
+        background-image: url(img/responsive-adaptive-design.png);
+        background-size: cover;
+        width: 900px;
+        height: 498px;
+    }
+    
+    h2{
+        margin-left: 35px;
+    }
+}
+
+
